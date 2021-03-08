@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    //設定猜拳顯示的圖片
+    //設定猜拳顯示的圖片:)
     let rockImage = UIImage(named: "rock")
     let paperImage = UIImage(named: "paper")
     let scissorImage = UIImage(named: "scissor")
