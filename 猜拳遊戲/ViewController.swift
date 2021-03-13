@@ -8,17 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var pcPlayer: UIImageView!
     @IBOutlet weak var player: UIImageView!
     @IBOutlet weak var result: UIImageView!
     @IBOutlet weak var scissorBtn: UIButton!
     @IBOutlet weak var rockBtn: UIButton!
     @IBOutlet weak var paperBtn: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        result.image = UIImage(named:"vs")
     }
     //設定猜拳顯示的圖片
     let rockImage = UIImage(named: "rock")
@@ -29,49 +27,51 @@ class ViewController: UIViewController {
     func pcPlay() {
         pcPlayer.image = UIImage(named: pcPlayerImage.randomElement()!)
     }
-
-//    按鈕定義三種出拳
-    @IBAction func playGameAction(_ sender: UIButton) {
-        if sender == scissorBtn{
-            player.image = scissorImage
-        }
-        if sender == rockBtn{
-            player.image = rockImage
-        }
-        if sender == paperBtn{
-            player.image = paperImage
-        }
-        pcPlay()
-    }
-
     //    設定結果顯示圖片
         let winImage = UIImage(named: "win")
         let loseImage = UIImage(named: "lose")
         let winwinImage = UIImage(named: "try")
-    func resultImage() {
+    func gameResult() {
         if player.image == pcPlayer.image{
-            result.image =  UIImage(named: "try")
+            result.image =  winwinImage
         }
-        else if player.image == scissorImage{
-            if pcPlayerImage == "rock"{
-                result.image = UIImage(named: "lose")
+        if player.image == scissorImage{
+            if pcPlayer.image == UIImage(named: "rock"){
+                result.image = loseImage
             }
-            else result.image = uiimage(named: "win")
-        }
+            else if pcPlayer.image ==  UIImage(named: "paper"){
+                result.image = winImage
+            }
         else if player.image == rockImage{
-            if pcPlayerImage == UIImage(named:"paper"){
-                result.image = UIImage(named: "lose")
+            if pcPlayer.image == UIImage(named:"paper"){
+                result.image = loseImage
             }
-            else result.image = uiimage(named: "win")
-        }
+            else if pcPlayer.image ==  UIImage(named: "scissor"){
+                result.image = winImage
+            }
         else if player.image == paperImage{
-            if pcPlayerImage == UIImage(named:"scissor"){
-                result.image = UIImage(named: "lose")
+            if pcPlayer.image == UIImage(named:"scissor"){
+                result.image = loseImage
             }
-            else result.image = uiimage(named: "win")
+            else if pcPlayer.image ==  UIImage(named: "rock"){
+                result.image = winImage
+            }
         }
-    
     }
-
-}
+    //    按鈕定義三種出拳
+        @IBAction func playGameAction(_ sender: UIButton) {
+            if sender == scissorBtn{
+                player.image = scissorImage
+            }
+            if sender == rockBtn{
+                player.image = rockImage
+            }
+            if sender == paperBtn{
+                player.image = paperImage
+            }
+            pcPlay()
+            gameResult()
+        }
+        }
+    }
 
