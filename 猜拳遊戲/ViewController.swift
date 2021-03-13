@@ -66,7 +66,7 @@ class ViewController: UIViewController {
                 result.image = UIImage(named:"vs")
             }
     //    按鈕定義三種出拳
-            func playGameAction(_ sender: UIButton) {
+    @IBAction func playGameAction(_ sender: UIButton) {
             if sender == scissorBtn{
                 player.image = scissorImage
             }
