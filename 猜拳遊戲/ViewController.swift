@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var paperBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        result.image = UIImage(named:"vs")
+        restarGame()
     }
     //設定猜拳顯示的圖片
     let rockImage = UIImage(named: "rock")
@@ -42,6 +42,7 @@ class ViewController: UIViewController {
             else if pcPlayer.image ==  UIImage(named: "paper"){
                 result.image = winImage
             }
+        }
         else if player.image == rockImage{
             if pcPlayer.image == UIImage(named:"paper"){
                 result.image = loseImage
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
             else if pcPlayer.image ==  UIImage(named: "scissor"){
                 result.image = winImage
             }
+        }
         else if player.image == paperImage{
             if pcPlayer.image == UIImage(named:"scissor"){
                 result.image = loseImage
@@ -58,8 +60,13 @@ class ViewController: UIViewController {
             }
         }
     }
+            func restarGame(){
+                player.image = nil
+                pcPlayer.image = nil
+                result.image = UIImage(named:"vs")
+            }
     //    按鈕定義三種出拳
-        @IBAction func playGameAction(_ sender: UIButton) {
+            func playGameAction(_ sender: UIButton) {
             if sender == scissorBtn{
                 player.image = scissorImage
             }
@@ -70,8 +77,8 @@ class ViewController: UIViewController {
                 player.image = paperImage
             }
             pcPlay()
-            gameResult()
+                gameResult()
         }
-        }
-    }
 
+            
+    }
