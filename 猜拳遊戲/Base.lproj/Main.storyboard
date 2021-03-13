@@ -47,7 +47,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="✌🏻"/>
                                 <connections>
-                                    <action selector="playgame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8T-qx-JwS"/>
+                                    <action selector="playGameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOC-WN-V4N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyT-XL-1z1">
@@ -56,7 +56,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="✊🏻"/>
                                 <connections>
-                                    <action selector="playgame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jBi-cf-2RY"/>
+                                    <action selector="playGameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VHW-Nd-t0k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUP-rG-KJH">
@@ -65,7 +65,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="✋🏻"/>
                                 <connections>
-                                    <action selector="playgame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4u5-0l-lcg"/>
+                                    <action selector="playGameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNw-33-w8W"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vs" translatesAutoresizingMaskIntoConstraints="NO" id="Sg0-vy-hmh">
@@ -85,14 +85,17 @@
                         <color key="backgroundColor" red="0.23197656086810578" green="0.3986999384820013" blue="0.815049759065262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="paperBtn" destination="NUP-rG-KJH" id="QuS-Wz-ktK"/>
                         <outlet property="pcPlayer" destination="Riz-YJ-pYk" id="0q3-4a-aA6"/>
                         <outlet property="player" destination="wcF-7N-8cy" id="A6u-G1-VrZ"/>
                         <outlet property="result" destination="Sg0-vy-hmh" id="DOx-2e-Y87"/>
+                        <outlet property="rockBtn" destination="iyT-XL-1z1" id="WhN-fd-52M"/>
+                        <outlet property="scissorBtn" destination="Y3f-4l-IAY" id="gE0-Cw-bVT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-157.59999999999999" y="-231.2807881773399"/>
+            <point key="canvasLocation" x="-199" y="-231"/>
         </scene>
     </scenes>
     <resources>
