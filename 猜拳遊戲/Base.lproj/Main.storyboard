@@ -37,6 +37,18 @@
                                 <rect key="frame" x="35" y="677" width="103" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric_mark_ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="6Y4-7u-AcI">
+                                <rect key="frame" x="132" y="677" width="103" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric_mark_ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="OLX-Nf-roG">
+                                <rect key="frame" x="229" y="677" width="103" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vs" translatesAutoresizingMaskIntoConstraints="NO" id="Sg0-vy-hmh">
+                                <rect key="frame" x="-3" y="268" width="321" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scissor" translatesAutoresizingMaskIntoConstraints="NO" id="wcF-7N-8cy">
                                 <rect key="frame" x="152" y="496" width="223" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,18 +83,6 @@
                                     <action selector="playGameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNw-33-w8W"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vs" translatesAutoresizingMaskIntoConstraints="NO" id="Sg0-vy-hmh">
-                                <rect key="frame" x="-3" y="268" width="321" height="205"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric_mark_ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="6Y4-7u-AcI">
-                                <rect key="frame" x="132" y="677" width="103" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric_mark_ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="OLX-Nf-roG">
-                                <rect key="frame" x="229" y="677" width="103" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.23197656086810578" green="0.3986999384820013" blue="0.815049759065262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
